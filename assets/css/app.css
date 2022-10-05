@@ -396,6 +396,26 @@ h6 {
     background-color: black;
 }
 
+@media (max-width: 800px) {
+    .flexOnMobile {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .position-absolute.start-0.top-0.translate-middle img {
+        display: none;
+    }
+
+    .sliderDot {
+        display: none;
+    }
+
+    .flexOnMobile img {
+        transform: rotate(-90deg);
+    }
+}
+
+
 /* ==== Testimonial CSS End ==== */
 
 /* ==== Sponsor CSS ==== */

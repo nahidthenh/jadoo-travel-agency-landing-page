@@ -331,6 +331,12 @@ h6 {
     opacity: 1;
 }
 
+@media (max-width: 800px) {
+    .position-absolute.z-index--1.me-10.me-xxl-0 img {
+        display: none;
+    }
+}
+
 .btn.icon-item img {
     background: #F5F5F5;
     padding: 8px 8px;
@@ -343,6 +349,10 @@ h6 {
 
 .margin-left {
     margin-left: -7rem !important;
+}
+
+.mt-n1 {
+    margin-top: -0.25rem !important;
 }
 
 .bg-primary {
@@ -358,3 +368,27 @@ h6 {
 }
 
 /* ==== Booking CSS End ==== */
+
+
+
+/* ==== Testimonial CSS  ==== */
+.s-logo {
+
+    filter: grayscale(0);
+}
+
+.s-logo:hover {
+    filter: grayscale(1);
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body.text-center img {
+    width: 135px;
+    height: 32px;
+}
+
+/* ==== Testimonial CSS End ==== */

@@ -18,45 +18,50 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+// StickyTop 
+$(window).scroll(function () {
+    const scroll = $(window).scrollTop();
 
-
-
-var swiper6 = new Swiper(".mySwiper6", {
-    grabCursor: true,
-    effect: "creative",
-    creativeEffect: {
-        prev: {
-            shadow: true,
-            origin: "left center",
-            translate: ["-5%", 0, -200],
-            rotate: [0, 100, 0],
-        },
-        next: {
-            origin: "right center",
-            translate: ["5%", 0, -200],
-            rotate: [0, -100, 0],
-        },
-    },
+    if (scroll >= 92) {
+        $(".navbar").addClass("sticky-top-nav");
+    } else {
+        $(".navbar").removeClass("sticky-top-nav");
+    }
 });
 
+// Testimonial Slider
 
+var slideIndex = 1;
+displaySlide(slideIndex);
 
+function moveSlides(n) {
+    displaySlide(slideIndex += n);
+}
 
+function activeSlide(n) {
+    displaySlide(slideIndex = n);
+}
 
-// When the user scrolls the page, execute myFunction
-window.onscroll = function () { myFunction() };
+/* Main function */
+function displaySlide(n) {
+    var i;
+    var totalslides = $(".slide");
+    var totaldots = $(".sliderDot");
 
-// Get the navbar
-var navbar = document.getElementById("navbar");
-
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-    } else {
-        navbar.classList.remove("sticky");
+    if (n > totalslides.length) {
+        slideIndex = 1;
     }
-} 
+
+    if (n < 1) {
+        slideIndex = totalslides.length;
+    }
+    for (i = 0; i < totalslides.length; i++) {
+        totalslides[i].style.display = "none";
+    }
+    for (i = 0; i < totaldots.length; i++) {
+        totaldots[i].className =
+            totaldots[i].className.replace(" active", "");
+    }
+    totalslides[slideIndex - 1].style.display = "block";
+    totaldots[slideIndex - 1].className += " sliderDotActive";
+}

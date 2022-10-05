@@ -68,6 +68,11 @@ h6 {
     color: #F1A501 !important;
 }
 
+.sticky-top-nav {
+    background: #f8f9fa !important;
+    transition: ease all .5s;
+}
+
 /* ==== NavBar CSS End ==== */
 
 
@@ -375,6 +380,21 @@ h6 {
     border: 0;
 }
 
+.sliderDot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 8px;
+    background-color: #bbbbbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+
+.sliderDotActive,
+.sliderDot:hover {
+    background-color: black;
+}
 
 /* ==== Testimonial CSS End ==== */
 
@@ -468,7 +488,7 @@ h6 {
 
 
 /* ==== Footer CSS  ==== */
-.icon-item {
+.icon-items {
     background: #FFFFFF;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     height: 45px;
@@ -482,7 +502,7 @@ h6 {
     transition: .3s;
 }
 
-.icon-item:hover {
+.icon-items:hover {
     background: conic-gradient(from 180deg at 50% 50%, #B8D2F1 0deg, #F289AA 60deg, #C68BF0 106.09deg, #D164DA 153.75deg, #C963E8 221.25deg, #BFC2E8 258.75deg, #FFC999 288.75deg, #D0D8C9 315deg, #BAD0F1 334.13deg, #CED8CB 358.97deg, rgba(255, 255, 255, 0) 360deg);
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     transition: .3s;

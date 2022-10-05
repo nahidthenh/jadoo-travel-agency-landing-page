@@ -317,36 +317,4 @@ h6 {
     }
 }
 
-/* @media (min-width: 1200px) {
-    .ms-xl-n4 {
-        margin-left: -1.8rem !important;
-    }
-
-    .d-xl-block {
-        display: block !important;
-    }
-}
-
-.translate-middle-x {
-    -webkit-transform: translateX(-50%) !important;
-    -ms-transform: translateX(-50%) !important;
-    transform: translateX(-50%) !important;
-}
-
-.start-100 {
-    left: 100% !important;
-}
-
-.bottom-0 {
-    bottom: 0 !important;
-}
-
-.position-relative {
-    position: relative !important;
-}
-
-.d-none {
-    display: none !important;
-} */
-
 /* ==== Destination CSS End ==== */

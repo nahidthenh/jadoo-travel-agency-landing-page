@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Base CSS  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.section-title {
+    font-family: 'Volkhov',
+        serif;
+    color: #14183E !important;
+}
+
+.section-sub-title {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+body {
+    font-family: 'Poppins',
+        sans-serif !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    color: #5E6282;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.fw-medium {
+    font-weight: 500 !important;
+}
+
+/* Base CSS  End*/
+
+
+/* ==== NavBar CSS ==== */
+.navbar-nav .nav-link {
+    color: #212832 !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #F1A501 !important;
+}
+
+/* ==== NavBar CSS End ==== */
+
+
+/* ==== Header CSS ==== */
+.hero-bg {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    will-change: transform, opacity, filter;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.hero-img {
+    width: 105%;
+    margin-left: -5rem;
+}
+
+.text-danger {
+    color: #DF6951 !important;
+}
+
+.hero-title {
+    font-size: 2.88651rem;
+    color: #181E4B;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-title::before {
+    content: '';
+    position: absolute;
+    right: 0.9375rem;
+    top: 2.5rem;
+    width: 20rem;
+    height: 0.8125rem;
+    background-image: url(../images/hero/shape.svg);
+    background-size: contain;
+    z-index: -1;
+}
+
+@media (min-width:992px) {
+    .hero-title::before {
+        top: 2.8125rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero-title {
+        font-size: 4.62363rem;
+    }
+
+    .hero-title::before {
+        font-size: 4.62363rem;
+        top: 4.1875rem;
+        right: -0.9375rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .hero-title {
+        font-size: 5.20158rem;
+    }
+
+    .hero-title::before {
+        font-size: 5.20158rem;
+        top: 4.6875rem;
+        width: 23.125rem;
+    }
+}
+
+.primary-btn-shadow {
+    background-color: #F1A501;
+    box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+}
+
+.btn-primary {
+    color: #FFFEFE;
+    background-color: #F1A501;
+    border-color: #F1A501;
+}
+
+.btn-primary:hover {
+    color: #FFFEFE;
+    background-color: #cd8c01;
+    border-color: #c18401;
+}
+
+.danger-btn-shadow {
+    background: #DF6951;
+    box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+}
+
+.round-btn-lg {
+    height: 3.25rem;
+    width: 3.25rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+}
+
+.hero-btn span {
+    color: #686D77;
+}
+
+
+/* ==== Header CSS End ==== */
+
+
+
+/* ==== Services CSS  ==== */
+.position-absolute.z-index--1.end-0.d-none.d-lg-block {
+    position: relative !important;
+}
+
+.position-absolute.z-index--1.end-0.d-none.d-lg-block img {
+    position: absolute;
+    right: 0;
+}
+
+.pt-md-9 {
+    padding-top: 7.5rem !important;
+}
+
+.z-index--1 {
+    z-index: -1;
+}
+
+.text-secondary {
+    color: #5E6282 !important;
+}
+
+.fs-7 {
+    font-size: 2.2807rem !important;
+}
+
+@media (min-width: 992px) {
+    .fs-lg-8 {
+        font-size: 2.56578rem !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .fs-xl-10 {
+        font-size: 3.24732rem !important;
+    }
+}
+
+.mb-6 {
+    margin-bottom: 3rem !important;
+}
+
+.mb-7 {
+    margin-bottom: 4rem !important;
+}
+
+.card {
+    border: none;
+}
+
+.shadow-hover {
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.rounded-3 {
+    border-radius: 2.25rem !important;
+}
+
+.card.service-card::before {
+    content: '';
+    position: absolute;
+    left: 0.625rem;
+    bottom: 0.625rem;
+    width: 6.25rem;
+    height: 6.25rem;
+    background-color: #DF6951;
+    border-radius: 1.875rem 0 0.625rem 0;
+    z-index: -1;
+    transition: all 0.2s ease-in-out;
+}
+
+.card.service-card:hover::before {
+    left: -1.475rem;
+    bottom: -2.1875rem;
+}
+
+.shadow-hover:hover {
+
+    background: #FFFFFF;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+        0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+        0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+        0px 20px 13px rgba(0, 0, 0, 0.01),
+        0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+        0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 36px;
+}
+
+@media (min-width: 1400px) {
+    .p-xxl-5 {
+        padding: 2.5rem !important;
+    }
+}
+
+.plane {
+    width: 100px;
+    height: 75px;
+}
+
+.service-title {
+    font-size: 20px;
+    color: #1E1D4C;
+}
+
+/* ==== Services CSS End ==== */

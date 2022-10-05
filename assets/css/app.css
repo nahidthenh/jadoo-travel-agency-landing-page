@@ -22,17 +22,19 @@ body {
         sans-serif !important;
 }
 
-a {
-    text-decoration: none !important;
-}
-
 li {
     list-style: none;
 }
 
-p {
+p,
+span,
+a {
     margin: 0;
     padding: 0;
+    color: #5E6282;
+}
+
+a:hover {
     color: #5E6282;
 }
 
@@ -48,6 +50,10 @@ h6 {
 
 .fw-medium {
     font-weight: 500 !important;
+}
+
+.fs-1 {
+    font-size: 18px !important;
 }
 
 /* Base CSS  End*/
@@ -291,3 +297,56 @@ h6 {
 }
 
 /* ==== Services CSS End ==== */
+
+
+/* ==== Destination CSS  ==== */
+.card.overflow-hidden.shadow {
+    border-radius: 1.5rem;
+}
+
+.reSize {
+    right: -82px;
+    position: absolute;
+    bottom: -300px;
+    transform: translateX(-50%) !important;
+}
+
+@media (max-width: 800px) {
+    .reSize {
+        display: none;
+    }
+}
+
+/* @media (min-width: 1200px) {
+    .ms-xl-n4 {
+        margin-left: -1.8rem !important;
+    }
+
+    .d-xl-block {
+        display: block !important;
+    }
+}
+
+.translate-middle-x {
+    -webkit-transform: translateX(-50%) !important;
+    -ms-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important;
+}
+
+.start-100 {
+    left: 100% !important;
+}
+
+.bottom-0 {
+    bottom: 0 !important;
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+.d-none {
+    display: none !important;
+} */
+
+/* ==== Destination CSS End ==== */

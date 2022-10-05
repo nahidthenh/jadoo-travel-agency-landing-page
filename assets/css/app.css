@@ -318,3 +318,43 @@ h6 {
 }
 
 /* ==== Destination CSS End ==== */
+
+
+/* ==== Booking CSS  ==== */
+.show-onhover .hideEl {
+    visibility: hidden;
+    opacity: 1;
+}
+
+.show-onhover:hover .hideEl {
+    visibility: visible;
+    opacity: 1;
+}
+
+.btn.icon-item img {
+    background: #F5F5F5;
+    padding: 8px 8px;
+    border-radius: 100px;
+}
+
+.card.position-relative.shadow {
+    border-radius: 1.875rem;
+}
+
+.margin-left {
+    margin-left: -7rem !important;
+}
+
+.bg-primary {
+    background-color: #F1A501 !important;
+}
+
+.bg-danger {
+    background-color: #DF6951 !important;
+}
+
+.bg-info {
+    background-color: #006380 !important;
+}
+
+/* ==== Booking CSS End ==== */

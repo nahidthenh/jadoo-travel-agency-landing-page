@@ -392,3 +392,74 @@ h6 {
 }
 
 /* ==== Testimonial CSS End ==== */
+
+/* ==== Call To Action CSS  ==== */
+
+.py-8 {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+
+@media (min-width: 992px) {
+    .w-lg-75 {
+        width: 75% !important;
+    }
+}
+
+.form-control::placeholder {
+    color: #5E6282 !important;
+    opacity: 1;
+}
+
+.input-field-styled {
+    border-radius: 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: #39425D;
+    padding: 1rem 1rem 1rem 2.7rem;
+    border: none;
+    font-size: 14px;
+}
+
+.input-group-icon {
+    position: relative;
+}
+
+.input-group-icon .message-icon {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    color: #212529;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.orange-gradient-button {
+    background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+    border: none;
+    border-radius: 0.625rem;
+    padding: 1rem 2.5rem;
+}
+
+.position-absolute.z-index--1.end-0.d-none.d-lg-block.cta-shape img {
+    right: -100px;
+    bottom: -70px;
+}
+
+@media (max-width: 800px) {
+    .position-absolute.z-index--1.end-0.d-none.d-lg-block.cta-shape img {
+        display: none;
+    }
+
+    .position-absolute.start-100.top-0.translate-middle.ms-md-n3.ms-n4.mt-3 img {
+        display: none;
+    }
+}
+
+/* ==== Call To Action CSS End ==== */
+
+
+.footer {
+    margin-bottom: 180px;
+}

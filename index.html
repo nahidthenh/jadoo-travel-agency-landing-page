@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
   <!-- App CSS -->
   <link href="assets/css/app.css" rel="stylesheet" />
+  <!-- <link href="assets/css/car.css" rel="stylesheet" /> -->
 
 </head>
 
@@ -25,7 +26,7 @@
   <section class="main-wrap">
     <!-- ===== Header / Nav Start ===== -->
     <!-- bg-light fixed-top will add later -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-xl-top py-4 d-block bg-light">
+    <nav id="navbar" class="navbar sticky navbar-expand-lg navbar-light sticky-top py-4 d-block">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="assets/images/logo.svg" alt="logo" width="100" height="34">
@@ -353,11 +354,42 @@
     <!-- ===== Booking Area End ===== -->
 
     <!-- ===== Testimonial Area  ===== -->
-    <!-- 
-      
-      Will Work on later
-    
-    -->
+    <section id="testimonial" class="pt-5 pt-md-9">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="mb-8 text-start">
+              <h5 class="text-secondary section-sub-title">Testimonials </h5>
+              <h3 class="section-title fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">What people say about
+                Us.</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-6 position-relative">
+            <div class="carousel-item position-relative active">
+              <div class="card shadow" style="border-radius:10px;">
+                <div class="position-absolute start-0 top-0 translate-middle">
+                  <img class="rounded-circle fit-cover" src="assets/images/testimonial/2.png" alt="" width="65"
+                    height="65">
+                </div>
+                <div class="card-body p-4">
+                  <p class="fw-medium mb-4">“On the Windows talking painted pasture yet its express parties use.
+                    Sure last upon he same as knew next. Of believed or diverted no.”</p>
+                  <h5 class="text-secondary">Thomas Wagon</h5>
+                  <p class="fw-medium fs--1 mb-0">CEO of Red Button</p>
+                </div>
+              </div>
+              <div class="card shadow-sm position-absolute top-0 z-index--1 mb-3 w-100 h-100"
+                style="border-radius:10px;transform:translate(25px, 25px)"> </div>
+            </div>
+          </div>
+          <div class="col-lg-1">
+            <button onclick="">ArrowUp</button>
+            <button onclick="">ArrowDown</button>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- ===== Testimonial Area End ===== -->
 
     <!-- ===== Sopnsor Area  ===== -->
@@ -460,7 +492,6 @@
     <!-- ===== Call To Action Area End =====  -->
 
     <!-- ===== Footer Area Start =====  -->
-
     <section class="pt-5 pt-md-9">
       <div class="container">
         <div class="row">
@@ -537,12 +568,10 @@
         </div>
       </div>
     </section>
-
     <!-- Footer CopyRight  -->
     <div class="py-5 text-center">
-      <p class="mb-0 text-secondary fs--1 fw-medium">All rights reserved@jadoo.co</p>
+      <p class="mb-0 fw-medium text-secondary fs--1">All rights reserved@jadoo.co</p>
     </div>
-
     <!-- ===== Footer Area End =====  -->
 
     <!-- ===== Script File Path ===== -->

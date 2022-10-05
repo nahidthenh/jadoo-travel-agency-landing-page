@@ -460,6 +460,25 @@ h6 {
 /* ==== Call To Action CSS End ==== */
 
 
-.footer {
-    margin-bottom: 180px;
+/* ==== Footer CSS  ==== */
+.icon-item {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    height: 45px;
+    margin-right: 20px;
+    border-radius: 100px;
+    text-align: center;
+
+    display: inline-block;
+    width: 45px;
+    line-height: 45px;
+    transition: .3s;
 }
+
+.icon-item:hover {
+    background: conic-gradient(from 180deg at 50% 50%, #B8D2F1 0deg, #F289AA 60deg, #C68BF0 106.09deg, #D164DA 153.75deg, #C963E8 221.25deg, #BFC2E8 258.75deg, #FFC999 288.75deg, #D0D8C9 315deg, #BAD0F1 334.13deg, #CED8CB 358.97deg, rgba(255, 255, 255, 0) 360deg);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: .3s;
+}
+
+/* ==== Footer CSS End ==== */

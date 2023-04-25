@@ -1,6 +1,3 @@
-### `App Screen Shot`
-![Screenshot](./ss.png)
-
 ### `About This Page`
 
 This project focuses more on building the UI and making it interactive. i convert this project figma to html 
@@ -12,3 +9,6 @@ This project focuses more on building the UI and making it interactive. i conver
 ### `Figma File`
 
 [https://freebiesui.com/xd-freebies/travel-agency-landing-page/](https://freebiesui.com/xd-freebies/travel-agency-landing-page/)
+
+### `App Screen Shot`
+![Screenshot](./ss.png)
